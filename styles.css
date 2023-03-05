@@ -1,0 +1,92 @@
+.box-l{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.box-r{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 5% 15% ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+
+.title{
+    margin-left: 20px;
+}
+.tabs{
+    margin-right: 30px;
+}
+
+.content-l {
+    
+    width: 50%;
+    overflow: hidden;
+    max-width: 500px
+  }
+  
+  .content-l h1 , .content-l p , .content-r img {
+    animation: 2s slide-right 2s forwards;
+      transform:translateX(-100%);
+  }
+  
+  @keyframes slide-right {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+  .content-r{
+    width: 50%;
+    overflow: hidden;
+    max-width: 500px;
+  }
+
+  .content-r h1 , .content-r p , .content-l img{
+    animation: 2s slide-left 2s forwards;
+    transform: translateX(100%);
+  }
+  @keyframes slide-left{
+    to {
+        transform: translateX(0);
+    }
+  }
+
+h1{
+    color: white;
+    font-size: 5rem;
+    margin: 10% 0;
+}
+p{
+    color: white;
+}
+
+.orange-bg{
+    background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) , url('images/orange-bg.jpg');
+    
+}
+
+.grape-bg{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url('images/grape-bg.jpg');
+}
+
+.berry-bg{
+    background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) , url('images/berry-bg.jpg');
+}
+
+.strawberry-bg{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url('images/strawberry-bg.jpg');
+}
+
+.fanta{
+    height: 650px;
+}
